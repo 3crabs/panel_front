@@ -1,8 +1,8 @@
 <template>
   <q-header class="bg-white text-black">
     <q-toolbar>
-      <q-toolbar-title class="text-center main-text">
-          panel
+      <q-toolbar-title class="main-text">
+          panel`
       </q-toolbar-title>
     </q-toolbar>
   </q-header>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Header"
+  name: 'Header'
 }
 </script>
 

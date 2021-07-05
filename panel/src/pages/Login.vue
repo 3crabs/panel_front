@@ -8,10 +8,10 @@
 
         <div class="form">
           <small>логин</small>
-          <q-input class="login q-mb-lg" filled style="border-radius: 6px" v-model="login" :dense="true"/>
+          <q-input color="brand" class="login q-mb-lg" filled style="border-radius: 6px" v-model="login" :dense="true"/>
 
           <small>пароль</small>
-          <q-input class="password" type="password" filled style="border-radius: 6px" v-model="password" :dense="true" />
+          <q-input color="brand" class="password" type="password" filled style="border-radius: 6px" v-model="password" :dense="true" />
           <div class="error-message">
             {{errorMessage}}
           </div>
@@ -19,7 +19,7 @@
 
         <div class="q-mt-lg">
           <q-btn class="login-button" unelevated no-caps>
-            войти
+            поехали
           </q-btn>
         </div>
 
@@ -32,16 +32,14 @@
 </template>
 
 <script>
-import Header from "../components/LayoutComponents/Header";
 export default {
   name: 'Login',
-  components: {Header},
 
-  data() {
+  setup() {
     return {
-      login: "",
-      password: "",
-      errorMessage: "",
+      login: '',
+      password: '',
+      errorMessage: '',
     }
   }
 }
